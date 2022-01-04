@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.game{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	pointer-events: all;
+}
+.attack{
+	position: absolute;
+	bottom: 10vh;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10%;
+	height: 5vh;
+}
+.player{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 50%;
+	height: 80vh;
+	transition: all 0.5s ease;
+}
+
+.shotter{
+	height: 50vh;
+	/*background: grey;*/
+	position: relative;
+	z-index: -3;
+}
+.shotter img{
+	height: 100%;
+	z-index: -2;
+}
+.s2{
+	transform: rotateY(180deg);
+}
+
+.bullets{
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	top: 0%;
+	left: 80%;
+	position: absolute;
+	top: 17%;
+	font-size: 1rem;
+	color: red;
+}
+
+.b2{
+	left: 15%;
+}
+
+.blood{
+	animation: blood 0.5s reverse infinite;
+}
+.bulletAnimate1{
+	animation: shoot1 0.5s linear infinite;
+}
+
+.bulletAnimate2{
+	animation: shoot2 0.5s linear infinite;
+}
+
+.invisible{
+	display: none;
+	pointer-events: none;
+}
+@keyframes shoot1{
+  from{
+  	left:80%;
+  }to{
+  	left: 250%;
+  }
+}
+@keyframes shoot2{
+  from{
+  	left:15%;
+  }to{
+  	left: -160%;
+  }
+}
+
+@keyframes blood{
+	from{
+		background: #fff;
+	}to{
+		background: rgba(255, 0, 0,0.1);
+	}
+}

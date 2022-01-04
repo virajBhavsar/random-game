@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Shooting Game</title>
+</head>
+<body>
+	<div class="home">
+		<button class="start">Start Game</button>
+		<button class="restart invisible">Restart game</button>
+		<h1>Player 1 - Won: <span class="won1">0</span></h1>
+		<h1>Player 2 - Won: <span class="won2">0</span></h1>
+		<h1 class="home-winner-msg"></h1>
+	</div>
+	<div class="game invisible">
+		<div class="player p1">
+			<h1>Health : <span class="health h1">100</span></h1>
+			<div class="shotter">
+				<img class="s1" src="https://cdn-icons-png.flaticon.com/512/94/94118.png"/>
+				<div class="bullets b1">
+				</div>
+			</div>
+		</div>
+		<div class="player p2">
+			<h1>Health : <span class="health h2">100</span></h1>
+			<div class="shotter">
+				<img class="s2" src="https://cdn-icons-png.flaticon.com/512/94/94118.png"/>
+				<div class="bullets b2">
+				</div>
+			</div>
+		</div>
+		<button class="attack">Attack</button>
+	</div>
+	<div class="winner-page invisible">
+		<h1 class="winner-msg"></h1>
+		<button class="gotomenu">back to menu</button>
+	</div>
+</body>
+<script src="app.js"></script>
+</html>
+
+<!-- https://careers.inkoop.io/job_posts/js-developer-intern/applicants/fE9TmHRSKDnzU9FBJipY77yh -->
